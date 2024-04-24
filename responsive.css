@@ -1,0 +1,188 @@
+/*		Default Layout: 960px. 
+		Gutters: 24px.
+		Outer margins: 48px.
+		Leftover space for scrollbars @1024px: 32px.
+-------------------------------------------------------------------------------
+*/
+
+.xs_l_d{
+    display: none;
+}
+.nav_t{
+	height: 50px;
+}
+.lg_l_d{
+	height: 50px;
+}
+
+
+
+
+
+
+
+/*		Tablet Layout: 768px.
+		Gutters: 24px.
+		Outer margins: 28px.
+		Inherits styles from: Default Layout.
+-----------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8
+px      68    160    252    344    436    528    620    712    */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+	
+	
+	
+	
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*		Mobile Layout: 320px.
+		Gutters: 24px.
+		Outer margins: 34px.
+		Inherits styles from: Default Layout.
+---------------------------------------------
+cols    1     2      3
+px      68    160    252    */
+
+@media only screen and (max-width: 767px) {
+
+
+	
+	
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+/*		Wide Mobile Layout: 480px.
+		Gutters: 24px.
+		Outer margins: 22px.
+		Inherits styles from: Default Layout, Mobile Layout.
+------------------------------------------------------------
+cols    1     2      3      4      5
+px      68    160    252    344    436    */
+
+@media only screen and (min-width: 280px) and (max-width: 767px) {
+
+#navbar{
+    display:  none;
+}
+.w_n > img {
+    padding: 10px 10px;
+    margin: 0;
+}
+.xs_l_d{
+    display: block;
+}
+.lg_l_d{
+    display: none;
+}
+#log {
+    padding: 0;
+}
+#log > ul > li {
+	width: 100%;
+    padding: 8px 5px;
+}
+#log > ul > li > a {
+    font-size: 12px;
+}
+
+/**Nav**/
+.nav_t{
+	height: auto;
+	background: #090a09;
+}
+.lg_l_d{
+	height: auto;
+}
+#nav > ul > li {
+    padding: 8px 1px;
+}
+#nav > ul > li > a {
+    font-size: 12px;
+}
+/**End Nav**/
+.ptr_bg{
+	margin-top: 20px;
+}
+.conatin > p {
+    text-align: justify;
+}
+
+.prtnr {
+    margin: 5px;
+}
+
+.our_partner > h2 {
+    margin-left: 7px;
+}
+.f_nav > ul > li > a {
+    display: block;
+    font-size: 16px;
+    padding: 5px 6px;
+}
+
+.social>ul{
+	display: block;
+	text-align: center;
+	width: 46%;
+	margin: 0 auto;
+}
+	
+	
+	
+	
+	
+	
+	
+}
+
+
+/*	Retina media query.
+	Overrides styles for devices with a 
+	device-pixel-ratio of 2+, such as iPhone 4.
+-----------------------------------------------    */
+
+@media 
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (min-device-pixel-ratio: 2) {
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

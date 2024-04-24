@@ -1,0 +1,90 @@
+	
+	<div class="container_full footer_bg"> 
+		<div class="container"> 
+			<div class="footer"> 
+				
+				<div class="col-lg-4 col-md-4 col-xs-12"> 
+					<div id="single_footer">
+						<h2>About Us</h2>
+						<p>হেলপারের কপালে ভাঁজ। হাতের ভাঁজে নোট। চিৎকার করে যাত্রী তোলে। </p>
+						<p>বডিতে জোরে বাড়ি দেয়। ধোঁয়া ছেড়ে পঙ্খিরাজের মতো এগোয় দুই নম্বর বাস।</p>
+					</div>
+				</div>
+				
+				<div class="col-lg-4 col-md-4 col-xs-12"> 
+					<div id="single_footer">
+						<h2>Inportant Link</h2>
+						<ul>
+							<li><a href="#"><i class="fab fa-facebook-square"></i>Facebook</a></li>
+							<li><a href="#"><i class="far fa-envelope"></i>Facebook</a></li>
+						</ul>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+	
+	
+	<!--Scroll Shadow Effect -->
+	<script>
+		$(window).scroll(function() {     
+		var scroll = $(window).scrollTop();
+		if (scroll > 40) {
+			$("#navbar").addClass("shadow");
+		}
+		else {
+			$("#navbar").removeClass("shadow");
+		}
+	});
+	</script>
+	
+	<script>
+		function openNav() {
+		  document.getElementById("mySidepanel").style.width = "100%";
+		  document.getElementById("amo").style.display = "block";
+		  document.getElementById("am").style.display = "none";
+		}
+
+		function closeNav() {
+		  document.getElementById("mySidepanel").style.width = "0";
+		  document.getElementById("amo").style.display = "none";
+		  document.getElementById("am").style.display = "block";
+		}
+	</script>
+	
+	<!--Click Drop Down-->
+	<script>
+		/* When the user clicks on the button, 
+		toggle between hiding and showing the dropdown content */
+		function myFunction() {
+		  document.getElementById("myDropdown").classList.toggle("show");
+		}
+
+		// Close the dropdown if the user clicks outside of it
+		window.onclick = function(event) {
+		  if (!event.target.matches('.dropbtn i')) {
+			var dropdowns = document.getElementsByClassName("dropdown-content");
+			var i;
+			for (i = 0; i < dropdowns.length; i++) {
+			  var openDropdown = dropdowns[i];
+			  if (openDropdown.classList.contains('show')) {
+				openDropdown.classList.remove('show');
+			  }
+			}
+		  }
+		}
+	</script>
+	
+	<?php wp_footer(); ?>
+	
+</body>
+</html>
